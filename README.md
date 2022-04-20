@@ -11,8 +11,7 @@ const sum = function(...arg){
         else return a;
     }
 }
-</pre></li><li>h2 style="text-align:center"> Making any existing function a currying function - </h2>
-<h3 style="text-align:center"><i>A Function which will take another function as an argument and will return a new function which is curried version of the previous passed function</i></h3><pre>
+</pre></li><li><h2 style="text-align:center"> Making any existing function a currying function - </h2><h3 style="text-align:center"><i>A Function which will take another function as an argument and will return a new function which is curried version of the previous passed function</i></h3><pre>
 const curry = fn => {
     let curried = (...arg) =>{
         if(arg.length>=fn.length){
