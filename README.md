@@ -22,4 +22,17 @@ const curryingFunc = (fn, ...args) => {
     }
   }
 }
-</pre></li></ol>
+</pre></li>
+    <li><h2 style="text-align:center"> Making any existing function a currying function with infinite arguments - </h2>
+<pre>
+const curryingFunc = (fn) => {
+  const initialArgs = [];
+  return (...args) => {
+    const allArgs = initialArgs.concat(args);
+    if (allArgs.length >= fn.length) {
+      return fn.apply(this, allArgs);
+    } else {
+      return curryingFunc(fn, ...allArgs); // Return a function for remaining arguments
+    }
+  };
+};</pre></li></ol>
