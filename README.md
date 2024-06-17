@@ -1,5 +1,5 @@
 # Currying-in-Javascript
-Currying to pass arguments in different different ways in the same function
+Currying to pass arguments in different ways in the same function
 <ol><li><h2 style="text-align:center"> Total sum of infinite arguments - </h2>
 <h3 style="text-align:center"><i>sum(1,2..n)(5,6…n)…(n)()</i></h3>
 <pre>
